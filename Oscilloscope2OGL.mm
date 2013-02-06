@@ -38,9 +38,9 @@ static CGLContextObj cglContext;
 	for (NSMutableArray *aTrace in allTraces)
 		for (NSUInteger i=0; i<numberOfPoints; ++i) [aTrace addObject: [NSNumber numberWithFloat: NAN]];
 #if !__has_feature(objc_arc)
-	self.backgroundColor = [[[NSColor colorWithDeviceWhite:0.9f alpha:1.0f]  colorUsingColorSpaceName:NSDeviceRGBColorSpace] retain];
+	self.backgroundColor = [[NSColor colorWithDeviceWhite:0.9f alpha:1.0f]  colorUsingColorSpaceName: NSDeviceRGBColorSpace];
 #else
-	self.backgroundColor = [[NSColor colorWithDeviceWhite:0.9f alpha:1.0f]  colorUsingColorSpaceName:NSDeviceRGBColorSpace];
+	self.backgroundColor = [[NSColor colorWithDeviceWhite:0.9f alpha:1.0f]  colorUsingColorSpaceName: NSDeviceRGBColorSpace];
 #endif
 	[self setFullscale: 1.0f];
 	[self setLineWidth: 1.0f];
@@ -61,7 +61,7 @@ static CGLContextObj cglContext;
 }
 
 
-- (void) awakeFromNib {	// NSLog(@"%s", __PRETTY_FUNCTION__);
+- (void) awakeFromNib {	//	NSLog(@"%s", __PRETTY_FUNCTION__);
 }
 
 
