@@ -17,17 +17,6 @@ History
 2010-03-05	added functions for parity with non-OGL version, and dividing lines
 2009-12-30	added @property
 
- This oscilloscope can have one or up to kMaxNumberOfTraces traces.
- Most calls are availabe in both single- and multichannel mode.
-
- The oscilloscope advances 1 point in device space per call "advanceWithSample(s)"
- Entire sweeps can also be displayed with "setTrace:toSweep:" / "setSingleTraceToSweep:"
- 0 is in the center, the vertical scaling is addressed by calling "setMaxPositiveValue:".
-
- To insert in your program:
- In your controller class: create an Oscilloscope2* IBOutlet.
- In Interface Builder: instantiate a Custom View, set its class to Oscilloscope2, then connect it with the IBOutlet.
-
 */
 
 
