@@ -4,7 +4,7 @@
 Oscilloscope2OGL
 ================
 
-A simple multi-channel "oscilloscope" for MacOS. Similar to Oscilloscope3, but using OpenGL; with a simplified tester.
+A simple multi-channel "oscilloscope" for MacOS. Similar to Oscilloscope3, but using OpenGL; with a simplified demo.
 
 
 This oscilloscope can have one or up to kOscilloscopeMaxNumberOfTraces traces (preset to 8).
